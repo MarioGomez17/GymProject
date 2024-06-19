@@ -1,3 +1,5 @@
 UsedCommands.txt
 db.sqlite3
 GYM_PROJECT/__pycache__
+GYM_APP/migrations
+GYM_APP/__pycache__
