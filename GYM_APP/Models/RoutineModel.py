@@ -11,7 +11,7 @@ class RoutineModel(models.Model):
     Focus_RoutineModel = models.TextField(db_column='Focus_Routine', default='')
     Exercises_RoutineModel = models.IntegerField(db_column='Exercises_Routine', default=0)
     Series_RoutineModel = models.IntegerField(db_column='Series_Routine', default=0)
-    Weight_RoutineModel = models.FloatField(db_column='Weight_RoutineTemplate', default=0)
+    Weight_RoutineModel = models.FloatField(db_column='Weight_Routine', default=0)
     WeightUnit_RoutineModel = models.ForeignKey(WeightUnitModel, on_delete=models.PROTECT, db_column='WeightUnit_Routine')
     User_RoutineModel = models.ForeignKey(UserModel, on_delete=models.PROTECT, db_column='User_Routine')
     MuscleDay_RoutineModel = models.ForeignKey(MuscleDayModel, on_delete=models.PROTECT, db_column='MuscleDay_Routine')
