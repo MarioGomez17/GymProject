@@ -6,7 +6,7 @@ from .WeightUnitModel import WeightUnitModel
 from .RoutineModel import RoutineModel
 
 class SerieModel(models.Model):
-    Id_SerieModel = models.AutoField(primary_key=True, db_column='Id_Serie', default=1)
+    Id_SerieModel = models.AutoField(primary_key=True, db_column='Id_Serie')
     Name_SerieModel = models.CharField(max_length=50, db_column='Name_Serie', default='')
     ExerciseVariant_SerieModel = models.ForeignKey(ExerciseVariantModel, on_delete=models.PROTECT, db_column='ExerciseVariant_Serie')
     ExerciseType_SerieModel = models.ForeignKey(ExerciseTypeModel, on_delete=models.PROTECT, db_column='ExerciseType_Serie')

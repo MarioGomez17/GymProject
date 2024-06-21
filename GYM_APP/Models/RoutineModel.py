@@ -5,7 +5,7 @@ from .MuscleDayModel import MuscleDayModel
 
 
 class RoutineModel(models.Model):
-    Id_RoutineModel = models.AutoField(primary_key=True, db_column='Id_Routine', default=1)
+    Id_RoutineModel = models.AutoField(primary_key=True, db_column='Id_Routine')
     Name_RoutineModel = models.CharField(max_length=50, db_column='Name_Routine', default='')
     Date_RoutineModel = models.DateTimeField(auto_now_add=True, db_column='Date_Routine')
     Focus_RoutineModel = models.TextField(db_column='Focus_Routine', default='')

@@ -4,7 +4,7 @@ from .GenderModel import GenderModel
 
 
 class UserModel(models.Model):
-    Id_UserModel = models.AutoField(primary_key=True, db_column='Id_User', default=1)
+    Id_UserModel = models.AutoField(primary_key=True, db_column='Id_User')
     Name_UserModel = models.CharField(max_length=50, db_column='Name_User', default='')
     LastName_UserModel = models.CharField(max_length=50, db_column='LastName_User', default='')
     Email_UserModel = models.CharField(max_length=50, db_column='Email_User', default='')

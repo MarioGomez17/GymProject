@@ -4,7 +4,7 @@ from .DaySplitModel import DaySplitModel
 
 
 class MuscleDayModel(models.Model):
-    Id_MuscleDayModel = models.AutoField(primary_key=True, db_column='Id_MuscleDay', default=1)
+    Id_MuscleDayModel = models.AutoField(primary_key=True, db_column='Id_MuscleDay')
     Muscle_MuscleDayModel = models.ForeignKey(MuscleModel, on_delete=models.PROTECT, db_column='Muscle_MuscleDay')
     Day_MuscleDayModel = models.ForeignKey(DaySplitModel, on_delete=models.PROTECT, db_column='Day_MuscleDay')
 
