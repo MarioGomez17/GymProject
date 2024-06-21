@@ -9,3 +9,4 @@ class GymAppConfig(AppConfig):
         import GYM_APP.Models
         import GYM_APP.Serializers
         import GYM_APP.Views
+        import GYM_APP.Urls
