@@ -4,3 +4,6 @@ GYM_PROJECT/__pycache__
 GYM_APP/migrations
 GYM_APP/__pycache__
 GYM_APP/Models/__pycache__
+GYM_APP/Serializers/__pycache__
+GYM_APP/Urls/__pycache__
+GYM_APP/Views/__pycache__
