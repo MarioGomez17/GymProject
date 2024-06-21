@@ -3,7 +3,7 @@ from rest_framework import routers
 from ..Views import SplitViewSet
 
 Router = routers.DefaultRouter()
-Router.register(r'Split', SplitViewSet)
+Router.register(r'', SplitViewSet)
 
 urlpatterns = [
     path('', include(Router.urls))

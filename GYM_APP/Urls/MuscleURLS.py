@@ -3,7 +3,7 @@ from rest_framework import routers
 from ..Views import MuscleViewSet
 
 Router = routers.DefaultRouter()
-Router.register(r'Muscle', MuscleViewSet)
+Router.register(r'', MuscleViewSet)
 
 urlpatterns = [
     path('', include(Router.urls))

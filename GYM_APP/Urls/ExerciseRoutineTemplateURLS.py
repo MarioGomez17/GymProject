@@ -3,7 +3,7 @@ from rest_framework import routers
 from ..Views import ExerciseRoutineTemplateViewSet
 
 Router = routers.DefaultRouter()
-Router.register(r'ExerciseRoutineTemplate', ExerciseRoutineTemplateViewSet)
+Router.register(r'', ExerciseRoutineTemplateViewSet)
 
 urlpatterns = [
     path('', include(Router.urls))

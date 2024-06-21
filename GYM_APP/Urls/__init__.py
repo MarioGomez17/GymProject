@@ -17,20 +17,20 @@ from . import WeightUnitURLS
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include(DaySplitURLS)),
-    path('', include(ExerciseEquipmentURLS)),
-    path('', include(ExerciseRoutineTemplateURLS)),
-    path('', include(ExerciseTypeURLS)),
-    path('', include(ExerciseURLS)),
-    path('', include(ExerciseVariantURLS)),
-    path('', include(GenderURLS)),
-    path('', include(MuscleDayURLS)),
-    path('', include(MuscleURLS)),
-    path('', include(RoutineTemplateURLS)),
-    path('', include(RoutineURLS)),
-    path('', include(SerieURLS)),
-    path('', include(SplitURLS)),
-    path('', include(SplitUserURLS)),
-    path('', include(UserURLS)),
-    path('', include(WeightUnitURLS))
+    path('DaySplit', include(DaySplitURLS)),
+    path('ExerciseEquipment', include(ExerciseEquipmentURLS)),
+    path('ExerciseRoutineTemplate', include(ExerciseRoutineTemplateURLS)),
+    path('ExerciseType', include(ExerciseTypeURLS)),
+    path('Exercise', include(ExerciseURLS)),
+    path('ExerciseVariant', include(ExerciseVariantURLS)),
+    path('Gender', include(GenderURLS)),
+    path('MuscleDay', include(MuscleDayURLS)),
+    path('Muscle', include(MuscleURLS)),
+    path('RoutineTemplate', include(RoutineTemplateURLS)),
+    path('Routine', include(RoutineURLS)),
+    path('Serie', include(SerieURLS)),
+    path('Split', include(SplitURLS)),
+    path('SplitUser', include(SplitUserURLS)),
+    path('User', include(UserURLS)),
+    path('WeightUnit', include(WeightUnitURLS))
 ]

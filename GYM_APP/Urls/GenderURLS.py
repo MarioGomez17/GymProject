@@ -3,7 +3,7 @@ from rest_framework import routers
 from ..Views import GenderViewSet
 
 Router = routers.DefaultRouter()
-Router.register(r'Gender', GenderViewSet)
+Router.register(r'', GenderViewSet)
 
 urlpatterns = [
     path('', include(Router.urls))
