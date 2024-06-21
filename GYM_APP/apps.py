@@ -7,3 +7,5 @@ class GymAppConfig(AppConfig):
 
     def ready(self):
         import GYM_APP.Models
+        import GYM_APP.Serializers
+        import GYM_APP.Views
